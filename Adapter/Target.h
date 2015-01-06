@@ -11,3 +11,9 @@
 @interface Target : NSObject
 
 @end
+
+@protocol Target <NSObject>
+
+- (void)request;
+
+@end

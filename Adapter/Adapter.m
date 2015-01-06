@@ -9,5 +9,13 @@
 #import "Adapter.h"
 
 @implementation Adapter
-
+-(void)request
+{
+    NSLog(@"Target Protocal request method invoked!");
+}
+-(void)adapteeRequest
+{
+    _adaptee = [[Adaptee alloc] init];
+    [_adaptee specificRequest];
+}
 @end

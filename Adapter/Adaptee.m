@@ -9,5 +9,8 @@
 #import "Adaptee.h"
 
 @implementation Adaptee
-
+- (void)specificRequest
+{
+    NSLog(@"Adaptee specificRequest method invoked!");
+}
 @end

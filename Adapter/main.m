@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Adapter.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Adapter *adapter = [[Adapter alloc] init];
+        [adapter request];
+        [adapter adapteeRequest];
     }
     return 0;
 }

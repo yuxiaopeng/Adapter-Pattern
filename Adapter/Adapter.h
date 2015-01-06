@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Adaptee.h"
+#import "Target.h"
 
-@interface Adapter : NSObject
-
+@interface Adapter : NSObject <Target>
+@property Adaptee *adaptee;
+-(void)adapteeRequest;
 @end
